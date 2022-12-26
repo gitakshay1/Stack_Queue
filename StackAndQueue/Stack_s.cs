@@ -25,15 +25,38 @@ namespace StackAndQueue
                 node.Next = this.top;
             }
             this.top = node;
-            Console.WriteLine("{0} is pushed to stack" , data);
+            Console.WriteLine("{0} is pushed to stack", data);
         }
         public void Display()
         {
             Node temp= this.top;
             while(temp!= null)
             {
-                Console.Write(temp.data + " ");
+                Console.WriteLine("|" + temp.data + "|");
                 temp = temp.Next;
+            }
+        }
+        public void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+            }
+            else
+            {
+                Console.WriteLine("\n{0} is in top of the stack", top.data);
+            }
+        }
+        public void pop()
+        {
+            if(this.top==null)
+            {
+                Console.WriteLine("stack is empty");
+            }
+            else
+            {
+               Console.WriteLine("value popped is {0}",top.data);
+                top=top.Next;
             }
         }
     }

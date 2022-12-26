@@ -11,7 +11,12 @@ namespace StackAndQue
             stack_S.push(30);
             stack_S.push(56);
             stack_S.Display();
-            
+
+            stack_S.peek();
+
+            stack_S.pop();
+
+            stack_S.Display();
         }
     }
 }
