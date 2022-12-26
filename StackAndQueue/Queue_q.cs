@@ -40,6 +40,14 @@ namespace StackAndQueue
                 }
             }
         }
-       
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            Console.WriteLine("{0} element is Dequeue", front.data);
+            front = front.Next;
+        }
     }
 }

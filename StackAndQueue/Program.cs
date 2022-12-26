@@ -22,7 +22,8 @@ namespace StackAndQue
             queue_Q.Enqueue(30);
             queue_Q.Enqueue(70);
             queue_Q.display();
-           
+            queue_Q.Dequeue();
+            queue_Q.display();
         }
     }
 }
